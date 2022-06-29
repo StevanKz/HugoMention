@@ -1,4 +1,5 @@
 heroku3
+pyromod
 pyrogram==1.4.16
 tgcrypto
 uvloop
