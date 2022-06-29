@@ -8,6 +8,7 @@
 # t.me/StvnsYu & t.me/HugoSupport
 
 
+import time
 import asyncio
 import logging
 
@@ -42,3 +43,5 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 logs = logging.getLogger(__name__)
     
 loop = asyncio.get_event_loop()
+
+StartTime = time.time()
