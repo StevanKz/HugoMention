@@ -11,7 +11,7 @@
 from pyrogram import idle
 from uvloop import install
 
-from Mention.helpers import git, heroku
+from Mention.misc import git, heroku
 from Mention import app, logs, loop
 
 
