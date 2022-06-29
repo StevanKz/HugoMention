@@ -1,0 +1,4 @@
+heroku3
+pyrogram==1.4.16
+tgcrypto
+uvloop

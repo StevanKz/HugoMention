@@ -1,0 +1,44 @@
+{
+  "name": "Hugo Mention",
+  "description": "The cool Telegram bot can mention all group members.",
+  "keywords": [
+    "telegram",
+    "HugoMention"
+  ],
+  "repository": "https://github.com/StevanKz/HugoMention",
+  "stack": "heroku-22",
+  "env": {
+    "API_ID": {
+      "description": "Get your API_ID at » my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get your API_HASH at » my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN":{
+      "description": "Get your BOT_TOKEN from » @BotFather",
+      "required": true
+    },
+    "HEROKU_APP_NAME":{
+      "description": "Enter the name of the heroku app, the first app name in the contents (see the top)",
+      "required": true
+    },
+    "HEROKU_API_KEY":{
+      "description": "Get your Heroku API_KEY here » https://dashboard.heroku.com/account",
+      "required": true
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
