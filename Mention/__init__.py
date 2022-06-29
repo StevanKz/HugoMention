@@ -8,8 +8,10 @@
 # t.me/StvnsYu & t.me/HugoSupport
 
 
-import sys
+import asyncio
+import logging
 
+from logging.handlers import RotatingFileHandler
 from pyromod import listen
 from pyrogram import Client
 
@@ -24,3 +26,19 @@ app = Client(
     workers=WORKERS,
     plugins={"root": "Mention.plugins"},
 )
+
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="[%(asctime)s - %(levelname)s] - %(name)s - %(message)s",
+    datefmt="%d-%b-%y %H:%M:%S",
+    handlers=[
+        RotatingFileHandler("HugoMention.txt", maxBytes=50000000, backupCount=10),
+        logging.StreamHandler(),
+    ],
+)
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
+
+logs = logging.getLogger(__name__)
+    
+loop = asyncio.get_event_loop()

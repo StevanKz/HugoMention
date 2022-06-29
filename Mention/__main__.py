@@ -11,21 +11,22 @@
 from pyrogram import idle
 from uvloop import install
 
-from Mention import app
+from Mention.helpers import git, heroku
+from Mention import app, logs, loop
 
 
 async def start_bot():
     try:
         await app.start()
     except Exception as a:
-        app.logs.warning(a)
+        logs.warning(a)
     await idle()
 
 
 if __name__ == "__main__":
-    app.logs.info("Starting Hugo Mention")
+    logs.info("Starting Mention-Bot")
     install()
-    app.git()
-    app.heroku()
-    app.logs.info("Hugo Mention Started Successfully !")
-    app.loop.run_until_complete(start_bot())
+    git()
+    heroku()
+    logs.info("Hugo Mention Started Successfully !")
+    loop.run_until_complete(start_bot())
