@@ -20,6 +20,10 @@
       "description": "Get your BOT_TOKEN from » @BotFather",
       "required": true
     },
+    "OWNER_ID": {
+      "description": "Enter your Telegram ID here.",
+      "required": true
+    },
     "HEROKU_APP_NAME":{
       "description": "Enter the name of the heroku app, the first app name in the contents (see the top)",
       "required": true
