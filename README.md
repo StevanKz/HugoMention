@@ -4,6 +4,8 @@ HugoMention is a modular Telegram bot that runs on Python3 with the Pyogram Libr
 
 I created this repository to help you mention all group members efficiently and to help reduce boredom while using Telegram.
 
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg)](https://www.digitalocean.com/?refcode=02a5db37138c&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
 ## ⚠️ Disclaimer
 
 ```
